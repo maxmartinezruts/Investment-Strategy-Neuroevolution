@@ -10,7 +10,14 @@ Use neuroevolution to optimize Neural Networks that can identify succesfull stra
 The idea is to create a generation of different strategies and testing the strategies on different domains of the
 stock market value for each generation. For every single generation, the strategies that lead to the highest capitals
 after being trained on the same sample of the market are the ones that are going to be carried to the next generation
-with subtle modifications.
+with subtle modifications. As an example, in the Figure below, strategy leading to the brown capital would be carried to the subsequent generation.  
+
+<p align="center">
+  <img src="capitalvstime.PNG" width="350" alt="accessibility text">
+</p>
+
+Figure: Capital records of all strategies being tested 
+
 
 The NN in charge of determining the policy of the strategy take as inputs the nth derivatives of the last 10 values of
 the sample taken and outputs the percentage the current capital to invest in the stock market.
