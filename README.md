@@ -37,15 +37,12 @@ Commonly, ANNs are structured in layers. Layered structures organize the nodes i
 By doing so, connections can only be present from nodes of one layer to nodes of subsequent layers, which
 causes the information to travel in an acyclic, unidirectional manner; from the input layer to the output layer.
 The complexity of ANN goes beyond the scope of this study. From now on, therefore, an ANN will be
-treated as a processing function; a function processing an input to obtain an output. Treating an ANN as
-such is useful to envision what is the actual role of an ANN in this study. ANNs are used for building a
-function that can process the current information of the vehicle control to return an action as a response.
+treated as a processing function; a function processing an input to obtain an output. 
 
 ## Neural Network Topology
 The topology of an ANN reefer to its structural organization of nodes and connections. Topology of ANNs
-can contribute to their performance. Having described the scenario in Experiment Description section, the input and output layers can already be determined. The input layer consists of three nodes - position p, velocity v and acceleration a - values. The output layer
-consists of one node containing the information on the increase in acceleration da. An extra hidden layer
-consisting of 6 nodes is also present to and depth - and therefore complexity - to the neural network. In
+can contribute to their performance. Having described the scenario in Experiment Description section, the input and output layers can already be determined. The input layer consists of various nodes - 1st derivative, 2nd derivative, 3rd derivative...-. The output layer
+consists of one node containing the information on the percentage the current capital to invest in the stock market. An extra hidden layer consisting of 6 nodes is also present to and depth - and therefore complexity - to the neural network. In
 order to account for non-linearities within the input variables to predict the system’s behavior, the activation
 function of the hidden and output layers are sigmoid functions, (used for probabilistic examples, as it outputs
 values from 0 to 1). The outputs .
